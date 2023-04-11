@@ -9,6 +9,21 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    macros {
+        nha: nha {
+            compatible = "zmk,behavior-macro";
+            label = "NHA";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp A>;
+        };
+        nho: nho {
+            compatible = "zmk,behavior-macro";
+            label = "NHO";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp O>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -42,7 +57,7 @@
 
             bindings = <
 &kp ESC  &kp F1    &kp F2    &kp F3     &kp F4  &kp F5                     &kp F6    &kp F7           &kp F8     &kp F9   &kp F10   &kp F11
- &trans  &trans  &kp HOME    &kp UP    &kp END  &trans                     &trans    &trans           &trans     &trans    &trans    &trans
+ &trans    &nha  &kp HOME    &kp UP    &kp END  &trans                     &trans    &trans           &trans       &nho    &trans    &trans
  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                  &kp CARET  &kp AMPS  &kp KP_MULTIPLY   &kp LPAR  &kp RPAR  &kp PIPE
  &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans   &kp LBKT  &kp RBKT         &kp SEMI  &kp COLON  &kp BSLH    &trans
                    &trans    &trans     &trans  &trans  &trans  &trans     &trans    &trans           &trans     &trans
