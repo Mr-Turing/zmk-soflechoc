@@ -42,11 +42,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-   &kp ESC  &kp N1        &kp N2    &kp N3  &kp N4     &kp N5                      &kp N6         &kp N7     &kp N8             &kp N9    &kp N0         &kp EQUAL
-   &kp TAB   &kp Q         &kp W     &kp E   &kp R      &kp T                       &kp Y          &kp U      &kp I              &kp O     &kp P  &kp LEFT_BRACKET
-&kp LSHIFT   &kp A         &kp S     &kp D   &kp F      &kp G                       &kp H          &kp J      &kp K              &kp L  &kp SEMI           &kp SQT
- &kp LCTRL   &kp Z         &kp X     &kp C   &kp V      &kp B  &kp C_MUTE  &none    &kp N          &kp M  &kp COMMA            &kp DOT  &kp FSLH     &kp BACKSLASH
-                    &mt LGUI RET  &kp LALT   &mo 1  &kp SPACE  &kp C_MUTE  &mo 2  &kp RET  &kp BACKSPACE    &kp DEL  &kp RIGHT_BRACKET
+   &kp ESC  &kp N1        &kp N2    &kp N3  &kp N4     &kp N5                       &kp N6      &kp N7          &kp N8      &kp N9       &kp N0         &kp EQUAL
+   &kp TAB   &kp Q         &kp W     &kp E   &kp R      &kp T                       &kp Y       &kp U           &kp I       &kp O       &kp P  &kp LEFT_BRACKET
+&kp LSHIFT   &kp A         &kp S     &kp D   &kp F      &kp G                       &kp H       &kp J           &kp K       &kp L       &kp SEMI           &kp SQT
+ &kp LCTRL   &kp Z         &kp X     &kp C   &kp V      &kp B  &none       &none    &kp N       &kp M           &kp COMMA   &kp DOT     &kp FSLH     &kp BACKSLASH
+                    &mt LGUI RET  &kp LALT   &mo 1  &kp SPACE  &none       &mo 2    &kp RET     &kp BACKSPACE   &kp DEL     &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
