@@ -1,6 +1,8 @@
 manifest:
   remotes:
     - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: petejohanson
       url-base: https://github.com/petejohanson
     - name: badjeff
       url-base: https://github.com/badjeff
@@ -9,13 +11,10 @@ manifest:
       remote: petejohanson
       revision: feat/pointers-move-scroll
       import: app/west.yml
-    - name: zmk-split-peripheral-input-relay
+    - name: cirque-input-module
       remote: badjeff
       revision: main
     - name: zmk-input-behavior-listener
-      remote: badjeff
-      revision: main
-    - name: cirque-input-module
       remote: badjeff
       revision: main
   self:
