@@ -15,6 +15,7 @@
 include:
   - board: nice_nano_v2
     shield: sofle_left
+    snippet: zmk-usb-logging
   - board: nice_nano_v2
     shield: sofle_right
 #  - board: nice_nano_v2
