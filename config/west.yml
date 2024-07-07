@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/petejohanson
     - name: claybford
       url-base: https://github.com/claybford
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: claybford #petejohanson
