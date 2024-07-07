@@ -1,13 +1,43 @@
-&pro_micro_i2c {
-    status = "okay";
-    glidepoint: glidepoint@2a {
-        compatible = "cirque,pinnacle";
-        reg = <0x2a>;
-        status = "okay";
-        dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;
+/ {
+	/* assign `input-listener` to all pointing devices */
+	/* &glidepoint0 on central, &glidepoint1 on peripheral */
+    tpad_central_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&glidepoint0>;
+        y-invert;
+        scale-multiplier = <2>;
+        // xy-swap;
+        // x-invert;
+	};
 
-        sensitivity = "1x";
-        sleep;
-        no-taps;
+    tpad_peripheral_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&glidepoint1>;
+        layers = <DEF>;
+        y-invert;
+        scale-multiplier = <2>;
+        /* NOTE: do NOT override event code here, */
+        /*       let Cirque glidepoint reports click from taps */
+        // evt-type = <INPUT_EV_REL>;
+        // x-input-code = <INPUT_REL_X>;
+        // y-input-code = <INPUT_REL_Y>;
+    };
+
+    tpad_peripheral_scroll {
+        compatible = "zmk,input-behavior-listener";
+        device = <&glidepoint1>;
+        layers = <LOW>;
+        /* NOTE: only apply input-code overriding for INPUT_EV_REL */
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_HWHEEL>;
+        y-input-code = <INPUT_REL_WHEEL>;
+        bindings = <&ib_wheel_scaler 1 8>;
+    };
+
+    ib_wheel_scaler: ib_wheel_scaler {
+            compatible = "zmk,input-behavior-scaler";
+            #binding-cells = <2>;
+            evt-type = <INPUT_EV_REL>;
+            input-code = <INPUT_REL_WHEEL>;
     };
 };
