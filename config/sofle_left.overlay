@@ -1,3 +1,5 @@
+#include "sofle.dtsi"
+
 / {
     /* define virtual input, will be resurrected for emitting input event */
 	/* NOTE: set `device = <&glidepoint1>` in `zmk,input-listener` */
