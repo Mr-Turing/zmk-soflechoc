@@ -8,7 +8,7 @@
 
         sensitivity = "1x";
         sleep;
-        no-taps;
+        //no-taps;
     };
 };
 
@@ -21,8 +21,6 @@
         device = <&glidepoint0>;
         y-invert;
         scale-multiplier = <2>;
-        // xy-swap;
-        // x-invert;
 	};
 
     tpad_peripheral_listener {
@@ -30,10 +28,5 @@
         device = <&glidepoint1>;
         y-invert;
         scale-multiplier = <2>;
-        /* NOTE: do NOT override event code here, */
-        /*       let Cirque glidepoint reports click from taps */
-        // evt-type = <INPUT_EV_REL>;
-        // x-input-code = <INPUT_REL_X>;
-        // y-input-code = <INPUT_REL_Y>;
     };
 };
