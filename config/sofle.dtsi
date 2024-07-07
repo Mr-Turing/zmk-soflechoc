@@ -6,21 +6,8 @@
         status = "okay";
         dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;
 
-        sensitivity = "4x";
-        // sleep;
+        sensitivity = "2x";
+        sleep;
         no-taps;
     };
-};
-
-/ {
-  glidepoint_listener {
-    compatible = "zmk,input-listener";
-    device = <&glidepoint>;
-
-    xy-swap;
-    y-invert;
-    x-invert;
-    scale-multiplier = <1>;
-    scale-divisor = <1>;
-  };
 };
