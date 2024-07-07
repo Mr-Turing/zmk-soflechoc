@@ -1,27 +1,19 @@
-&i2c0 {
-    status = "okay";
-    glidepoint0: glidepoint@2a {
-        status = "okay";
-    };
-};
-
 / {
-    /* THIS only makes keymap binding happy, nothing happens on peripheral side */
+    /* define virtual input, will be resurrected for emitting input event */
+	/* NOTE: set `device = <&glidepoint1>` in `zmk,input-listener` */
 	glidepoint1: virtual_input {
 		compatible = "zmk,virtual-input";
 	};
 
-    input_relay_config_102 {
-        compatible = "zmk,split-peripheral-input-relay";
-
-        /* peripheral side input device, used to... */
-		/*  - be intecepted on peripheral; */
-		/*  - and then, be resurrected as `zmk,virtual-device` on central; */
-        device = <&glidepoint0>;
-
-        /* channel id, used to be be transfered along with all input events. */
-		/* NOTE 1: pick any 8bit integer. (1 - 255) */
-		/* NOTE 2: should matching relay-channel on central overlay */
+	/* for central side, define (relay-channel)-to-(virtual-input) mapping */
+	input_relay_config_102 {
+		compatible = "zmk,split-peripheral-input-relay";
+		
+		/* channel id, used to filter incoming input event from split peripheral */
+		/* NOTE: should matching relay-channel on peripheral overlay */
 		relay-channel = <102>;
-    };
+
+		/* virtual input device on central, which used to emit input event as an agent device */
+		device = <&glidepoint1>;
+	};
 };
