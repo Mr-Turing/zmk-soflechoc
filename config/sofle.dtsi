@@ -1,10 +1,10 @@
 &pro_micro_i2c {
-    status = "enabled";                           
+    status = "okay";
     glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
-        status = "enabled";
-        dr-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH)>;
+        status = "okay";
+        dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;
 
         sensitivity = "4x";
         // sleep;
@@ -20,5 +20,7 @@
     xy-swap;
     y-invert;
     x-invert;
+    scale-multiplier = <1>;
+    scale-divisor = <1>;
   };
 };
