@@ -4,21 +4,10 @@
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "okay";
-        dr-gpios = <&gpio0 1 (GPIO_ACTIVE_HIGH)>;
+        dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;
 
-        sensitivity = "1x";
-        sleep;
+        sensitivity = "4x";
+        // sleep;
         no-taps;
-    };
-
-    input_config {
-        compatible = "zmk,input-configs";
-    
-        cirque_config {
-            device = <&glidepoint>;
-            xy-swap;
-            y-invert;
-            x-invert;
-        };
     };
 };
