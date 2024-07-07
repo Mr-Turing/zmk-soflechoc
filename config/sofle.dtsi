@@ -1,6 +1,6 @@
 &i2c0 {
     status = "disabled";
-    glidepoint: glidepoint@2a {
+    glidepoint0: glidepoint@2a {
         compatible = "cirque,pinnacle";
         reg = <0x2a>;
         status = "disabled";
