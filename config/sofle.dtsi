@@ -29,7 +29,6 @@
     tpad_peripheral_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&glidepoint1>;
-        layers = <DEF>;
         y-invert;
         scale-multiplier = <2>;
         /* NOTE: do NOT override event code here, */
@@ -39,16 +38,7 @@
         // y-input-code = <INPUT_REL_Y>;
     };
 
-    tpad_peripheral_scroll {
-        compatible = "zmk,input-behavior-listener";
-        device = <&glidepoint1>;
-        layers = <LOW>;
-        /* NOTE: only apply input-code overriding for INPUT_EV_REL */
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_HWHEEL>;
-        y-input-code = <INPUT_REL_WHEEL>;
-        bindings = <&ib_wheel_scaler 1 8>;
-    };
+  
 
     ib_wheel_scaler: ib_wheel_scaler {
             compatible = "zmk,input-behavior-scaler";
