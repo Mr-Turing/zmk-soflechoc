@@ -1,11 +1,5 @@
 #include "sofle.dtsi"
 
-&pro_micro_i2c {
-    status = "okay";
-    glidepoint: glidepoint@2a {
-        status = "okay";
-    };
-};
 
 /* enable &pd0 on split peripheral. typical input device for zephyr input subsystem. */
 /* NOTE 1: use the same device alias (&pd0) on central and peripheral(s) is alright. */
@@ -16,7 +10,14 @@
 &pd0 {
     status = "okay";
     glidepoint: glidepoint@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
         status = "okay";
+        dr-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH)>;
+
+        sensitivity = "1x";
+        sleep;
+        no-taps;
     };
 };
 
