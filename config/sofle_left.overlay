@@ -4,8 +4,10 @@
 /* this is an alias of your actual wired input device sensor in your central shield. */
 /* e.g. SPI optical sensor for trackball */
 &pd0 {
-	status = "okay";
-	/* the rest of sensor config should be config here, e.g. gpios */
+    status = "okay";
+    glidepoint: glidepoint@2a {
+        status = "okay";
+    };
 };
 
 / {
