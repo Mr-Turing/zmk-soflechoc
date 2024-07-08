@@ -17,14 +17,14 @@
 	/* assign `input-listener` to all pointing devices */
 	/* &glidepoint0 on central, &glidepoint1 on peripheral */
     tpad_central_listener {
-        compatible = "zmk,input-behavior-listener";
+        compatible = "zmk,input-listener";
         device = <&glidepoint0>;
         y-invert;
         scale-multiplier = <2>;
 	};
 
     tpad_peripheral_listener {
-        compatible = "zmk,input-behavior-listener";
+        compatible = "zmk,input-listener";
         device = <&glidepoint1>;
         y-invert;
         scale-multiplier = <2>;
