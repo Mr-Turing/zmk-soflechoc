@@ -12,6 +12,10 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <behaviors/mouse_keys.dtsi>
 
+#define DEF 0;
+#define UPE 1;
+#define MSC 2;
+
 / {
     macros {
         nha: nha {
