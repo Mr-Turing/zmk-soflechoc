@@ -20,7 +20,7 @@
         compatible = "zmk,input-listener";
         device = <&glidepoint0>;
         //xy-swap;
-        //y-invert;
+        y-invert;
         //x-invert;
         scale-multiplier = <2>;
 	};
@@ -29,7 +29,7 @@
         compatible = "zmk,input-listener";
         device = <&glidepoint1>;
         //xy-swap;
-        //y-invert;
+        y-invert;
         //x-invert;
         scale-multiplier = <2>;
     };
