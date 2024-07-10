@@ -18,6 +18,10 @@
 #define UPE 1;
 #define MSC 2;
 
+&sensors {
+    triggers-per-rotation = <12>;
+};
+
 / {
     macros {
         nha: nha {
