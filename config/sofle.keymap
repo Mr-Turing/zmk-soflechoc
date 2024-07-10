@@ -16,17 +16,15 @@
 #define UPE 1;
 #define MSC 2;
 
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 200
-
 &left_encoder {
-        steps = <24>;
+        steps = <96>;
 };
 
 &right_encoder {
-        steps = <24>;
+        steps = <96>;
 };
 &sensors {
-    triggers-per-rotation = <24>;
+    triggers-per-rotation = <12>;
 };
 
 / {
