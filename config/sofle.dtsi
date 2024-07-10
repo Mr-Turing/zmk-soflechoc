@@ -33,12 +33,6 @@
         //x-invert;
         scale-multiplier = <2>;
     };
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder &right_encoder>;
-        triggers-per-rotation = <12>;
-    };
 };
 
 
