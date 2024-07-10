@@ -16,11 +16,11 @@
 #define UPE 1;
 #define MSC 2;
 &left_encoder {
-        steps = <12>;
+        steps = <24>;
 };
 
 &right_encoder {
-        steps = <12>;
+        steps = <24>;
 };
 &sensors {
     triggers-per-rotation = <12>;
