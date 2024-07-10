@@ -15,11 +15,11 @@
 #define DEF 0;
 #define UPE 1;
 #define MSC 2;
-&encoder_left {
+&left_encoder {
         steps = <12>;
 };
 
-&encoder_right {
+&right_encoder {
         steps = <12>;
 };
 &sensors {
