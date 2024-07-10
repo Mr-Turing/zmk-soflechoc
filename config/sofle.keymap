@@ -12,8 +12,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <behaviors/mouse_keys.dtsi>
 
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 35
-
 #define DEF 0;
 #define UPE 1;
 #define MSC 2;
