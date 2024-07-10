@@ -19,14 +19,14 @@
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 150
 
 &left_encoder {
-        steps = <40>;
+        steps = <80>;
 };
 
 &right_encoder {
-        steps = <40>;
+        steps = <80>;
 };
 &sensors {
-    triggers-per-rotation = <12>;
+    triggers-per-rotation = <24>;
 };
 
 / {
