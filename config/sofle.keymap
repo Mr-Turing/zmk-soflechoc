@@ -16,7 +16,7 @@
 #define UPE 1;
 #define MSC 2;
 
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 150
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 500
 
 &left_encoder {
         steps = <24>;
