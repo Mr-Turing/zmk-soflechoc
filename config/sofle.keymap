@@ -16,6 +16,8 @@
 #define UPE 1;
 #define MSC 2;
 
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 5
+
 &left_encoder {
         steps = <48>;
 };
@@ -25,6 +27,10 @@
 };
 &sensors {
     triggers-per-rotation = <12>;
+};
+
+&msc {
+    acceleration-exponent = <1>;
 };
 
 / {
