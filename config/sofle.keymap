@@ -102,7 +102,7 @@
    &trans  &trans  &kp HOME    &kp UP    &kp END    &kp PAGE_UP                     &trans    &trans           &trans       &nho    &trans  &kp MINUS
    &trans    &nha  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN                  &kp CARET  &kp AMPS  &kp KP_MULTIPLY   &kp LPAR  &kp RPAR   &kp PIPE
    &trans  &trans    &trans    &trans     &trans         &trans  &trans  &trans   &kp LBKT  &kp RBKT         &kp SEMI  &kp COLON  &kp BSLH     &trans
-                     &trans    &trans     &trans         &trans  &trans  &trans     &trans    &trans           &trans     &adpin
+                     &trans    &trans     &trans         &trans  &bootloader  &trans     &trans    &trans           &trans     &adpin
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
@@ -122,7 +122,7 @@
     &trans       &kp INS     &kp PSCRN   &kp K_CMENU        &trans        &trans                  &kp PG_UP    &trans    &kp UP     &trans   &kp N0    &trans
     &trans      &kp LALT     &kp LCTRL     &kp LSHFT        &trans      &kp CLCK                  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
     &trans    &kp K_UNDO     &kp K_CUT    &kp K_COPY   &kp K_PASTE        &trans  &trans  &trans     &trans    &trans    &trans     &trans   &trans    &trans
-                                &trans        &trans        &trans        &trans  &trans  &trans     &trans    &trans    &trans     &trans
+                                &trans        &trans        &trans        &trans  &trans  &trans     &trans    &trans    &trans     &bootloader
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
