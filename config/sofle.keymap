@@ -62,11 +62,12 @@
       bindings = <&msc MOVE_UP>, <&msc MOVE_DOWN>;
       tap-ms = <50>;
     };
-	rc_lt: right_click_layer_tap {
-  compatible = "zmk,behavior-hold-tap";
-  #binding-cells = <2>;
-  bindings = <&mkp>,<&mo>;
-
+     rc_lt: right_click_layer_tap {
+     compatible = "zmk,behavior-hold-tap";
+     #binding-cells = <2>;
+     flavor = "hold-preferred";
+     tapping-term-ms = <200>;
+     bindings = <&mkp>,<&mo>;
 };
   };
 
