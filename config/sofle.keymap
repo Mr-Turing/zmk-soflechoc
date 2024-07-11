@@ -17,11 +17,11 @@
 #define MSC 2;
 
 &left_encoder {
-        steps = <130>;
+        steps = <48>;
 };
 
 &right_encoder {
-        steps = <130>;
+        steps = <48>;
 };
 &sensors {
     triggers-per-rotation = <12>;
