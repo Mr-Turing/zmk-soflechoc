@@ -16,7 +16,7 @@
 #define UPE 1;
 #define MSC 2;
 
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 7
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 5
 
 &left_encoder {
         steps = <48>;
@@ -60,7 +60,7 @@
       compatible = "zmk,behavior-sensor-rotate";
       #sensor-binding-cells = <0>;
       bindings = <&msc MOVE_UP>, <&msc MOVE_DOWN>;
-      tap-ms = <30>;
+      tap-ms = <50>;
     };
   };
 
