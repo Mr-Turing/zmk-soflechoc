@@ -1,4 +1,10 @@
-#include "sofle.dtsi"
+/*
+ * Copyright (c) 2020 Ryan Cross
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "tofle.dtsi"
 
 &default_transform {
     col-offset = <12>;
