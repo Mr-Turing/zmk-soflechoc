@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MIT
 
 config SHIELD_TOFLE_LEFT
-    def_bool $(shields_list_contains,sofle_left)
+    def_bool $(shields_list_contains,tofle_left)
 
 config SHIELD_TOFLE_RIGHT
-    def_bool $(shields_list_contains,sofle_right)
+    def_bool $(shields_list_contains,tofle_right)
 
 config SHIELD_TOFLE_NUMPAD
-    def_bool $(shields_list_contains,sofle_numpad)
+    def_bool $(shields_list_contains,tofle_numpad)
