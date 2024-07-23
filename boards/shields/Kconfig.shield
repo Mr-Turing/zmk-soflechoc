@@ -1,11 +1,11 @@
 # Copyright (c) 2020 Ryan Cross
 # SPDX-License-Identifier: MIT
 
-config SHIELD_TOFLE_LEFT
+config SHIELD_SOFLE_LEFT
     def_bool $(shields_list_contains,sofle_left)
 
-config SHIELD_TOFLE_RIGHT
+config SHIELD_SOFLE_RIGHT
     def_bool $(shields_list_contains,sofle_right)
 
-config SHIELD_TOFLE_NUMPAD
+config SHIELD_SOFLE_NUMPAD
     def_bool $(shields_list_contains,sofle_numpad)
