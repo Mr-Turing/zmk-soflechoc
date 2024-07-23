@@ -1,4 +1,4 @@
-#include "sofle.dtsi"
+#include "tofle.dtsi"
 
 &i2c0 {
     status = "okay";
