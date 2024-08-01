@@ -80,10 +80,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC     &kp N1  &kp N2        &kp N3    &kp N4  &kp N5                                   &kp N6   &kp N7         &kp N8     &kp N9             &kp N0    &kp EQUAL         &kp KP_N7     &kp KP_N8  &kp KP_N9   &mt KP_NUMLOCK PLUS
-&kp TAB     &kp Q   &kp W         &kp E     &kp R   &kp T                                    &kp Y    &kp U          &kp I      &kp O              &kp P     &kp LEFT_BRACKET  &kp KP_N4     &kp KP_N5  &kp KP_N4   &kp KP_MINUS
-&kp LSHIFT  &kp A   &kp S         &kp D     &kp F   &kp G                                    &kp H    &kp J          &kp K      &kp L              &kp SEMI  &kp SQT           &kp KP_N1     &kp KP_N2  &kp KP_N3   &kp KP_MULTIPLY
-&kp LCTRL   &kp Z   &kp X         &kp C     &kp V   &kp B      &none          &none          &kp N    &kp M          &kp COMMA  &kp DOT            &kp FSLH  &kp BACKSLASH     &kp KP_ENTER  &kp KP_N0  &kp KP_DOT  &kp KP_DIVIDE
+&kp ESC     &kp N1  &kp N2        &kp N3    &kp N4  &kp N5                                   &kp N6   &kp N7         &kp N8     &kp N9             &kp N0    &kp EQUAL         &kp KP_N7     &kp KP_N8  &kp KP_N9        &mt KP_NUMLOCK PLUS
+&kp TAB     &kp Q   &kp W         &kp E     &kp R   &kp T                                    &kp Y    &kp U          &kp I      &kp O              &kp P     &kp LEFT_BRACKET  &kp KP_N4     &kp KP_N5  &kp KP_NUMBER_6  &kp KP_MINUS
+&kp LSHIFT  &kp A   &kp S         &kp D     &kp F   &kp G                                    &kp H    &kp J          &kp K      &kp L              &kp SEMI  &kp SQT           &kp KP_N1     &kp KP_N2  &kp KP_N3        &kp KP_MULTIPLY
+&kp LCTRL   &kp Z   &kp X         &kp C     &kp V   &kp B      &none          &none          &kp N    &kp M          &kp COMMA  &kp DOT            &kp FSLH  &kp BACKSLASH     &kp KP_ENTER  &kp KP_N0  &kp KP_DOT       &kp KP_DIVIDE
                     &mt LGUI RET  &kp LALT  &mo 1   &kp SPACE  &kp LS(LC(M))  &rc_lt 2 RCLK  &kp RET  &kp BACKSPACE  &kp DEL    &kp RIGHT_BRACKET
             >;
 
