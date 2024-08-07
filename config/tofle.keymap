@@ -65,6 +65,15 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&mkp>;
         };
+
+        horscroll: horscroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "HORSCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc MOVE_LEFT>, <&msc MOVE_RIGHT>;
+
+            tap-ms = <50>;
+        };
     };
 
     keymap {
@@ -130,7 +139,7 @@
                           &trans        &trans        &trans        &trans        &trans  &trans  &trans             &trans    &trans    &bootloader
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>, <&horscroll>;
         };
     };
 };
