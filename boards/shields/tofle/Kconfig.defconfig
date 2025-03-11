@@ -16,6 +16,9 @@ if SHIELD_TOFLE_LEFT || SHIELD_TOFLE_RIGHT || SHIELD_TOFLE_NUMPAD
 	config ZMK_SPLIT
 		default y
 
+	config ZMK_POINTING
+    		default y
+
 	if ZMK_DISPLAY
 
 		config I2C
