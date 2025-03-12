@@ -92,18 +92,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
     };
 };
 
-&i2c0 {
-    status = "okay";
-    glidepoint0: glidepoint@0 {
-        compatible = "cirque,pinnacle";
-        reg = <0x0>;
-        status = "disabled";
-        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
-
-        sensitivity = "2x";
-        sleep;
-    };
-};
 
 /{
     split_inputs {
