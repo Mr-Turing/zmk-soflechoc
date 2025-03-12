@@ -25,10 +25,16 @@
     status = "okay";
 };
 
+
 &i2c0 {
     status = "okay";
     glidepoint0: glidepoint@0 {
+        compatible = "cirque,pinnacle";
+        reg = <0x0>;
         status = "okay";
+        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+        sensitivity = "2x";
+        sleep;
     };
 };
 
