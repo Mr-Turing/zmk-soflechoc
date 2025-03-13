@@ -31,7 +31,7 @@
     };
 };
 
-&pro_micro_i2c {
+&i2c0 {
     status = "okay";
 
     glidepoint: glidepoint@2a {
