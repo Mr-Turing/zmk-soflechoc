@@ -38,10 +38,6 @@
     };
 };
 
-&glidepoint_split {
-    device = <&glidepoint0>;
-};
-
 &i2c0_default {
     group1 {
       bias-pull-up;
