@@ -42,3 +42,6 @@
         sleep;
     };
 };
+&glidepoint_split {
+    device = <&glidepoint>;
+};
