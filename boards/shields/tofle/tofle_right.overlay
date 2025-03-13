@@ -42,9 +42,11 @@
 
         sensitivity = "2x";
         y-invert;
+        sleep;
     };
 };
 
 &glidepoint_split {
     device = <&glidepoint>;
+    input-processors = <&zip_xy_scaler 2 1>;
 };
