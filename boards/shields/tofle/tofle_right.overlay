@@ -39,7 +39,7 @@
 };
 
 &glidepoint_split {
-    device = <&glidepoint>;
+    device = <&glidepoint0>;
 };
 
 &i2c0_default {
