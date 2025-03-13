@@ -25,26 +25,8 @@
     status = "okay";
 };
 
-
-&i2c0 {
-    status = "okay";
-    glidepoint: glidepoint@0 {
-        compatible = "cirque,pinnacle";
-        reg = <0x0>;
-        status = "okay";
-        dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
-        sensitivity = "2x";
-        sleep;
-    };
-};
-
 &i2c0_default {
     group1 {
       bias-pull-up;
     };
-};
-
-&glidepoint_split {
-    device = <&glidepoint>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 };
