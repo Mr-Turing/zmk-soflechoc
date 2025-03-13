@@ -28,7 +28,7 @@
 
 &i2c0 {
     status = "okay";
-    glidepoint0: glidepoint@0 {
+    glidepoint: glidepoint@0 {
         compatible = "cirque,pinnacle";
         reg = <0x0>;
         status = "okay";
@@ -44,3 +44,7 @@
     };
 };
 
+&glidepoint_split {
+    device = <&glidepoint>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+};
