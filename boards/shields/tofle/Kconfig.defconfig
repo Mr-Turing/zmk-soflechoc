@@ -46,10 +46,4 @@ if SHIELD_TOFLE_LEFT || SHIELD_TOFLE_RIGHT || SHIELD_TOFLE_NUMPAD
 
 	endif # LVGL
 
-	if ZMK_RGB_UNDERGLOW
-
-		config WS2812_STRIP
-			default y
-	endif
-
 endif
