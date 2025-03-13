@@ -33,15 +33,17 @@
 
 &i2c0 {
     status = "okay";
-    glidepoint: glidepoint@0 {
+    glidepoint: glidepoint@2a {
         compatible = "cirque,pinnacle";
-        reg = <0x0>;
+        reg = <0x2a>;
         status = "okay";
         dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
         sensitivity = "2x";
+        y-invert;
         sleep;
     };
 };
+
 &glidepoint_split {
     device = <&glidepoint>;
 };
