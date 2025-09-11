@@ -39,7 +39,7 @@
         reg = <0x2a>;
         status = "okay";
         dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
-
+        sleep;
         sensitivity = "2x";
         y-invert;
     };
